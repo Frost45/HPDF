@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<title>
+			Authors | Posts
+		</title>
+	</head>
+	<body>
+		<style>
+			td {
+				text-align: center;
+				vertical-align: middle;
+			}
+		</style>
+		<table style="width:100%">
+		
+			<tr>
+				<th>Author</th>
+				<th>Number of Posts</th> 
+			</tr>
+	
+	{%for person in author%}
+			
+			<tr><td>{{person.name}}</td><td>{{person.post_count}}</td></tr>
+
+    {%endfor%}
+	
+		</table>
+	</body>
+
+</html>
